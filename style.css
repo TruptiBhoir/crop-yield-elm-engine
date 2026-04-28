@@ -1,0 +1,50 @@
+/* PROJECT: Crop Yield Prediction
+  MODULE: UI Styling
+  AUTHOR: Technical Documentation Team
+*/
+
+:root {
+    --primary-green: #2E7D32;
+    --accent-gold: #FFC107;
+    --error-red: #F44336;
+    --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    --border-radius: 12px;
+}
+
+/* Base Container Spacing */
+.main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography for Tech Reports */
+h1, h2, h3 {
+    color: var(--primary-green);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+/* Metric Cards with High Readability */
+[data-testid="stMetric"] {
+    background: #ffffff;
+    border-left: 6px solid var(--primary-green);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+}
+
+/* Clean Button States for Better UX */
+.stButton > button {
+    background: linear-gradient(135deg, #4CAF50, var(--primary-green));
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Hidden elements for clean Exporting/Screenshots */
+#MainMenu, footer, header { visibility: hidden; }

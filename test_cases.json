@@ -1,0 +1,71 @@
+{
+  "unit_tests": {
+    "preprocessing": [
+      {
+        "name": "test_missing_value_imputation",
+        "input": {
+          "temperature": [25.5, null, 27.8, 26.2],
+          "rainfall": [1200, 1100, null, 1300],
+          "soil_ph": [6.5, 6.8, 6.2, null]
+        },
+        "expected_output": {
+          "temperature": [25.5, 26.5, 27.8, 26.2],
+          "rainfall": [1200, 1100, 1200, 1300],
+          "soil_ph": [6.5, 6.8, 6.2, 6.5]
+        }
+      }
+    ],
+    "validation": [
+      {
+        "name": "test_valid_crop_types",
+        "input": ["wheat", "rice", "corn", "soybean"],
+        "expected": true,
+        "invalid_input": ["invalid_crop", "test", ""],
+        "expected_invalid": false
+      }
+    ]
+  },
+  "integration_tests": [
+    {
+      "name": "end_to_end_prediction",
+      "input_features": {
+        "temperature": 28.5,
+        "rainfall": 1250,
+        "soil_ph": 6.7,
+        "nitrogen": 150,
+        "phosphorus": 80,
+        "potassium": 120,
+        "crop_type": "wheat",
+        "region": "north"
+      },
+      "expected_range": {
+        "min_yield": 3.5,
+        "max_yield": 4.5
+      }
+    }
+  ],
+  "edge_cases": [
+    {
+      "name": "extreme_weather_conditions",
+      "description": "Test with very high temperature and low rainfall",
+      "input": {
+        "temperature": 45.0,
+        "rainfall": 200,
+        "soil_ph": 5.0
+      },
+      "should_handle": true
+    },
+    {
+      "name": "missing_all_values",
+      "description": "Test with completely empty input",
+      "input": {},
+      "should_handle": true,
+      "expected_action": "raise_validation_error"
+    }
+  ],
+  "performance_tests": {
+    "batch_size": [10, 100, 1000, 10000],
+    "expected_max_time_seconds": 0.5,
+    "memory_limit_mb": 512
+  }
+}

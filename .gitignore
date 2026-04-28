@@ -1,0 +1,20 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Environments
+.venv/
+venv/
+env/
+
+# Distribution / Build
+.dist/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local data (Optional: if you don't want to share your big CSV)
+*.pkl
