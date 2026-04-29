@@ -9,6 +9,16 @@ The Crop Yield Prediction System is a high-performance machine learning applicat
 
 Unlike traditional neural networks, this system utilizes an **Extreme Learning Machine (ELM)** architecture. By relying on a Single-hidden Layer Feedforward Network (SLFN) where input weights are randomly assigned and output weights are analytically determined, the engine achieves rapid training times and high generalization without the computational overhead of backpropagation.
 
+## 📸 System Interface
+
+**Main Dashboard & Predictive Input**
+![Main Dashboard](input_dashboard.png) 
+
+**Prediction Results & AI Yield Insights**
+![Results Dashboard](predict_dashboard.png)
+
+
+
 ## 🏗️ System Architecture
 The codebase follows a strict separation of concerns, decoupling the machine learning engine from the user interface.
 
@@ -20,6 +30,7 @@ ELM-PREDICTOR/
 ├── data/           # Testing datasets and JSON test cases
 ├── models/         # Serialized model artifacts (.pkl)
 └── tests/          # Accuracy and performance validation scripts
+```
 
 ### 🧩 Core Modules Breakdown
 
@@ -43,7 +54,7 @@ Built with Streamlit, this module handles all user interactions and state manage
 
 ---
 
-### 🚀 Quick Start & Installation
+## 🚀 Quick Start & Installation
 
 Follow these steps to run the Crop Yield Prediction System locally on your machine.
 
@@ -52,5 +63,37 @@ Ensure you have **Python 3.9+** installed on your system.
 
 #### 1. Clone the repository
 ```bash
-git clone [https://github.com/yourusername/ELM-PREDICTOR.git](https://github.com/yourusername/ELM-PREDICTOR.git)
-cd ELM-PREDICTOR
+git clone [https://github.com/TruptiBhoir/crop-yield-elm-engine.git](https://github.com/TruptiBhoir/crop-yield-elm-engine.git)
+cd crop-yield-elm-engine
+```
+
+#### 2. Create a Virtual Environment
+```bash
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On macOS/Linux:
+source .venv/bin/activate
+```
+
+#### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Run the Application
+```bash
+streamlit run app/main.py
+```
+---
+
+### ✒️ About the Documentation
+This repository serves as a live portfolio piece demonstrating enterprise-grade technical documentation.
+
+If your software team struggles with messy codebases, outdated developer portals, or non-existent READMEs, poorly documented code is costing you user adoption and slowing down engineering velocity.
+
+I help B2B SaaS and development agencies transform complex architecture into clear, marketable technical documentation.
+
+* GitHub Profile: [github.com/TruptiBhoir](https://github.com/TruptiBhoir)]
+
+* Contact: [trupti.bhoir002@gmail.com]
