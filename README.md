@@ -85,6 +85,7 @@ pip install -r requirements.txt
 ```bash
 streamlit run app/main.py
 ```
+The application will automatically open in your default web browser. If it doesn't, navigate to http://localhost:8501 to view the CYPS dashboard.
 ---
 
 ### ✒️ About the Documentation
