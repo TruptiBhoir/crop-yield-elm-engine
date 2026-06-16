@@ -63,7 +63,7 @@ Ensure you have **Python 3.9+** installed on your system.
 
 #### 1. Clone the repository
 ```bash
-git clone [https://github.com/TruptiBhoir/crop-yield-elm-engine.git](https://github.com/TruptiBhoir/crop-yield-elm-engine.git)
+git clone https://github.com/TruptiBhoir/crop-yield-elm-engine.git
 cd crop-yield-elm-engine
 ```
 
