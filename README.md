@@ -95,6 +95,6 @@ If your software team struggles with messy codebases, outdated developer portals
 
 I help B2B SaaS and development agencies transform complex architecture into clear, marketable technical documentation.
 
-* GitHub Profile: [github.com/TruptiBhoir](https://github.com/TruptiBhoir)]
+* GitHub Profile: [github.com/TruptiBhoir](https://github.com/TruptiBhoir)
 
-* Contact: [trupti.bhoir002@gmail.com]
+* Contact: trupti.bhoir002@gmail.com
